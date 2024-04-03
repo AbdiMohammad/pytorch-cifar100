@@ -74,6 +74,24 @@ def get_network(args):
     elif args.net == 'resnet152':
         from models.resnet import resnet152
         net = resnet152()
+    elif args.net == 'resnet20':
+        from models.cifar_resnet import resnet20
+        net = resnet20()
+    elif args.net == 'resnet32':
+        from models.cifar_resnet import resnet32
+        net = resnet32()
+    elif args.net == 'resnet44':
+        from models.cifar_resnet import resnet44
+        net = resnet44()
+    elif args.net == 'resnet56':
+        from models.cifar_resnet import resnet56
+        net = resnet56()
+    elif args.net == 'resnet110':
+        from models.cifar_resnet import resnet110
+        net = resnet110()
+    elif args.net == 'resnet1202':
+        from models.cifar_resnet import resnet1202
+        net = resnet1202()
     elif args.net == 'preactresnet18':
         from models.preactresnet import preactresnet18
         net = preactresnet18()
